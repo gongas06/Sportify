@@ -14,30 +14,39 @@
 
 .logo {
   width: 180px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
-h1 {
-  font-size: 28px;
+.title {
+  font-size: 36px;
   font-weight: 700;
   margin-bottom: 40px;
 }
 
-.btn-login {
-  --background: #000000;
-  --color: #ffffff;
+.input-box {
+  width: 80%;
   margin-bottom: 20px;
-  width: 245px;
-  height: 49px;
-  max-width: 70%;
-  font-size: 36px;
+  --background: #fff;
+  --border-color: #000;
+  --color: #000;
+  border: 1.5px solid #000;
+  border-radius: 6px;
+
+  /* espaçamento interno à esquerda (afeta label e input) */
+  --padding-start: 10px;
 }
 
-.btn-register {
-  --background: #bb6aff;
+
+.forgot {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.btn-login {
+  --background: #000;
   --color: #ffffff;
-  width: 245px;
-  height: 49px;
-  max-width: 70%;
-  font-size: 36px;
+  width: 70%;
+  font-size: 20px;
+  font-weight: 700;
 }

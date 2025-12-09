@@ -2,8 +2,12 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
-// IMPORTAR todos os componentes Ionic usados no HTML
-import { IonContent, IonButton, IonImg } from '@ionic/angular/standalone';
+import {
+  IonContent,
+  IonInput,
+  IonButton,
+  IonImg
+} from '@ionic/angular/standalone';
 
 @Component({
   selector: 'app-login',
@@ -14,6 +18,7 @@ import { IonContent, IonButton, IonImg } from '@ionic/angular/standalone';
     CommonModule,
     FormsModule,
     IonContent,
+    IonInput,
     IonButton,
     IonImg
   ]
