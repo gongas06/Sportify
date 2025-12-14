@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
 
 import {
   IonContent,
@@ -23,4 +24,11 @@ import {
     IonImg
   ]
 })
-export class LoginPage {}
+
+export class LoginPage {
+  constructor(private router: Router) {}
+
+  gotoRecover() {
+    this.router.navigate(['/recover']);
+  }
+}

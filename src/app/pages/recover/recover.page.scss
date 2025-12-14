@@ -39,11 +39,11 @@
 
 .forgot {
   font-size: 14px;
-  color: #444;
-  margin-bottom: 30px;
+  text-transform: none;
+  color: var(--ion-color-primary);
 }
 
-.btn-login {
+.btn-enviar {
   --background: #BC58FF;
   --color: #ffffff;
   width: 70%;

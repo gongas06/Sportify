@@ -1,0 +1,53 @@
+.login-page {
+  --background: #ffffff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo {
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+.input-box {
+  width: 80%;
+  margin-bottom: 20px;
+  --background: #fff;
+  --border-color: #000;
+  --color: #000;
+  border: 1.5px solid #000;
+  border-radius: 6px;
+
+  /* espaçamento interno à esquerda (afeta label e input) */
+  --padding-start: 10px;
+}
+
+
+.forgot {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.btn-registar {
+  --background: #BC58FF;
+  --color: #ffffff;
+  width: 70%;
+  height: 45px;
+  font-size: 20px;
+  font-weight: 700;
+}

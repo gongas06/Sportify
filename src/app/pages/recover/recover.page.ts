@@ -10,9 +10,9 @@ import {
 } from '@ionic/angular/standalone';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './register.page.html',
-  styleUrls: ['./register.page.scss'],
+  selector: 'app-recover',
+  templateUrl: './recover.page.html',
+  styleUrls: ['./recover.page.scss'],
   standalone: true,
   imports: [
     CommonModule,
@@ -23,4 +23,4 @@ import {
     IonImg
   ]
 })
-export class RegisterPage {}
+export class RecoverPage {}
