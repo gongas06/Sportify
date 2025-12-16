@@ -1,0 +1,75 @@
+
+.page {
+  padding: 24px;
+}
+
+.hello {
+  font-size: 28px;
+  margin-bottom: 0;
+  color: #000000;
+}
+
+.name {
+  font-size: 32px;
+  font-weight: 700;
+  color: #9b5cff;
+  margin-top: 0;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 24px;
+}
+
+.stats {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+  color: #000000;
+}
+
+.card {
+  flex: 1;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon {
+  font-size: 28px;
+  color: #9b5cff;
+}
+
+.icon.outline {
+  color: #9b5cff;
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.card p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.box {
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+
+.box.small {
+  height: 80px;
+}
+
+.box.large {
+  height: 220px;
+}
+
+

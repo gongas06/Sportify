@@ -1,13 +1,36 @@
-<ion-header [translucent]="true">
+
+<ion-header class="ion-no-border">
   <ion-toolbar>
-    <ion-title>Statistic</ion-title>
+    <ion-title></ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">statistic</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="page">
+
+  <h1 class="hello">Olá,</h1>
+  <h1 class="name">João!</h1>
+  <p class="subtitle">Aqui está o teu resumo semanal</p>
+
+  <div class="stats">
+    <div class="card">
+      <ion-icon name="flame" class="icon"></ion-icon>
+      <div>
+        <h2>1.200</h2>
+        <p>Total de calorias</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <ion-icon name="time" class="icon outline"></ion-icon>
+      <div>
+        <h2>3h 20m</h2>
+        <p>Tempo total</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="box small"></div>
+  <div class="box large"></div>
+
 </ion-content>
+
