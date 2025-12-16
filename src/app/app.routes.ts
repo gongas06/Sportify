@@ -29,5 +29,9 @@ export const routes: Routes = [
   {
     path: 'recover',
     loadComponent: () => import('./pages/recover/recover.page').then( m => m.RecoverPage)
+  },
+  {
+    path: 'statistic',
+    loadComponent: () => import('./pages/statistic/statistic.page').then( m => m.StatisticPage)
   }
 ];

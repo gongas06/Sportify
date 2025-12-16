@@ -7,6 +7,11 @@ export const tabsRoutes: Routes = [
     component: TabsPage,
     children: [
       {
+        path: 'statistic',
+        loadComponent: () =>
+          import('../statistic/statistic.page').then((m) => m.StatisticPage),
+      },
+      {
         path: 'profile',
         loadComponent: () =>
           import('../profile/profile.page').then((m) => m.ProfilePage),
@@ -18,7 +23,7 @@ export const tabsRoutes: Routes = [
       },
       {
         path: '',
-        redirectTo: 'home',
+        redirectTo: 'statistic',
         pathMatch: 'full',
       },
     ],

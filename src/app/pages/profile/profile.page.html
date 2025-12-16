@@ -1,13 +1,69 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>Profile</ion-title>
+    <ion-title>Perfil</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">profile</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" class="profile-content">
+
+  <!-- Cabeçalho do perfil -->
+  <div class="profile-header ion-text-center">
+    <ion-avatar class="profile-avatar">
+      <img src="assets/avatar.png" />
+    </ion-avatar>
+
+    <h2>João Silva</h2>
+    <p>joao@email.com</p>
+
+    <ion-button fill="outline" size="small" class="edit-btn">
+      Editar perfil
+    </ion-button>
+  </div>
+
+  <!-- Estatísticas -->
+  <ion-grid class="stats">
+    <ion-row>
+      <ion-col size="6">
+        <ion-card>
+          <ion-card-content>
+            <h3>12</h3>
+            <p>Atividades</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="6">
+        <ion-card>
+          <ion-card-content>
+            <h3>8h</h3>
+            <p>Tempo</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- Informações -->
+  <ion-list inset>
+    <ion-item>
+      <ion-label>Idade</ion-label>
+      <ion-note slot="end">25</ion-note>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Peso</ion-label>
+      <ion-note slot="end">70 kg</ion-note>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Altura</ion-label>
+      <ion-note slot="end">175 cm</ion-note>
+    </ion-item>
+  </ion-list>
+
+  <!-- Logout -->
+  <ion-button expand="block" color="danger" fill="outline" class="logout-btn">
+    Terminar sessão
+  </ion-button>
+
 </ion-content>
