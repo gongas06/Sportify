@@ -1,20 +1,56 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/standalone';
+
+import {
+  IonContent,
+  IonHeader,
+  IonToolbar,
+  IonTitle,
+  IonList,
+  IonListHeader,
+  IonItem,
+  IonLabel,
+  IonToggle,
+  IonSelect,
+  IonSelectOption,
+  IonIcon
+} from '@ionic/angular/standalone';
 
 @Component({
   selector: 'app-settings',
   templateUrl: './settings.page.html',
   styleUrls: ['./settings.page.scss'],
   standalone: true,
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule]
+  imports: [
+    CommonModule,
+    FormsModule,
+
+    IonContent,
+    IonHeader,
+    IonToolbar,
+    IonTitle,
+    IonList,
+    IonListHeader,
+    IonItem,
+    IonLabel,
+    IonToggle,
+    IonSelect,
+    IonSelectOption,
+    IonIcon
+  ]
 })
-export class SettingsPage implements OnInit {
+export class SettingsPage {
 
-  constructor() { }
+  darkMode = false;
+  language = 'pt';
 
-  ngOnInit() {
+  toggleDarkMode(event: any) {
+    const isDark = event.detail.checked;
+    document.body.classList.toggle('dark', isDark);
   }
 
+  logout() {
+    console.log('Logout');
+  }
 }
