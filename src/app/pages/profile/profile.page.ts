@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { IonIcon } from '@ionic/angular/standalone';    
+
 
 import {
   IonContent,
@@ -17,7 +19,7 @@ import {
   IonList,
   IonItem,
   IonLabel,
-  IonNote
+  IonNote,
 } from '@ionic/angular/standalone';
 
 @Component({
@@ -43,7 +45,7 @@ import {
     IonList,
     IonItem,
     IonLabel,
-    IonNote
+    IonNote,
   ]
 })
 export class ProfilePage implements OnInit {
