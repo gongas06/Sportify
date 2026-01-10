@@ -1,0 +1,188 @@
+/* =========================
+   RESET IONIC
+========================= */
+* {
+  --ion-color-primary: #a855f7;
+}
+
+/* =========================
+   HEADER (BRANCO, TEXTO PRETO)
+========================= */
+ion-header,
+ion-toolbar {
+  --background: #ffffff !important;
+  --color: #000000 !important;
+  box-shadow: none !important;
+  border-bottom: none !important;
+}
+
+ion-title {
+  color: #000000 !important;
+  font-size: 24px;
+  font-weight: 800;
+  text-align: center;
+}
+
+/* =========================
+   TÍTULOS DAS SEÇÕES
+========================= */
+.section-title,
+h2,
+h3,
+ion-label {
+  color: #000000 !important;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+/* =========================
+   TIPO DE DESPORTO (FIGMA STYLE)
+========================= */
+ion-segment {
+  background: transparent !important;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* Botões do segment (estado normal) */
+ion-segment-button {
+  --color: #000000; /* TEXTO PRETO */
+  --color-checked: #ffffff;
+  --indicator-color: transparent;
+  --background-checked: #a855f7;
+
+  border-radius: 12px;
+  margin: 4px;
+  font-weight: 500;
+}
+
+/* Remove linha azul feia do Ionic */
+ion-segment-button::part(indicator) {
+  display: none;
+}
+
+
+/* REMOVE INDICADOR */
+ion-segment-button::part(indicator) {
+  display: none;
+}
+
+/* BOTÃO ATIVO (ROXO) */
+ion-segment-button.segment-button-checked {
+  background: #a855f7 !important;
+  border-color: #a855f7 !important;
+  color: #ffffff !important;
+}
+
+/* ÍCONES */
+ion-segment-button ion-icon {
+  font-size: 18px;
+  color: inherit !important;
+}
+
+/* =========================
+   INPUTS (DATA / DURAÇÃO / LOCAL)
+========================= */
+ion-item {
+  --background: #ffffff !important;
+  --border-color: #d1d5db !important;
+  --color: #000000 !important;
+
+  border: 1.5px solid #d1d5db;
+  border-radius: 14px;
+
+  margin-top: 8px;
+}
+
+ion-input,
+ion-datetime {
+  color: #000000 !important;
+  font-size: 15px;
+}
+
+/* ÍCONES DOS INPUTS */
+ion-item ion-icon {
+  color: #000000 !important;
+}
+
+/* =========================
+   INTENSIDADE
+========================= */
+.intensity-container {
+  margin-top: 12px;
+}
+
+/* BOTÕES */
+
+
+.intensity-buttons ion-button {
+  all: unset;
+  flex: 1;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+}
+
+
+
+
+
+/* =========================
+   BOTÕES FINAIS
+========================= */
+.footer-buttons {
+  display: flex;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+/* CANCELAR */
+.cancel-button {
+  flex: 1;
+  background: #ede9fe !important;
+  color: #000000 !important;
+  border-radius: 999px;
+  font-size: 20px;
+  font-weight: 700;
+  height: 56px;
+}
+
+/* GUARDAR */
+.save-button {
+  flex: 1;
+  background: #a855f7 !important;
+  color: #ffffff !important;
+  border-radius: 999px;
+  font-size: 20px;
+  font-weight: 700;
+  height: 56px;
+}
+
+/* REMOVE SOMBRAS */
+ion-button {
+  box-shadow: none !important;
+}
+
+
+/* Botões do segment (estado normal) */
+ion-segment-button {
+  --color: #000000; /* TEXTO PRETO */
+  --color-checked: #ffffff;
+  --indicator-color: transparent;
+  --background-checked: #a855f7;
+
+  border-radius: 12px;
+  margin: 4px;
+  font-weight: 500;
+}
+
+/* Remove linha azul feia do Ionic */
+ion-segment-button::part(indicator) {
+  display: none;
+}
+

@@ -1,6 +1,7 @@
 import { Component, AfterViewInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router'; 
 import Chart from 'chart.js/auto';
 
 import {
@@ -29,6 +30,7 @@ import {
   imports: [
     CommonModule,
     FormsModule,
+    RouterModule, 
     IonContent,
     IonHeader,
     IonToolbar,
@@ -82,9 +84,7 @@ export class ProfilePage implements AfterViewInit {
         responsive: true,
         maintainAspectRatio: false,
         plugins: {
-          legend: {
-            position: 'bottom'
-          }
+          legend: { position: 'bottom' }
         },
         scales: {
           y: {
@@ -98,3 +98,4 @@ export class ProfilePage implements AfterViewInit {
     });
   }
 }
+

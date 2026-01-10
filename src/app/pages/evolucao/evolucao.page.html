@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Evolução</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <p class="subtitulo">
+    Compara os teus resultados com o período anterior
+  </p>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <ion-button fill="solid" size="small">Diárias</ion-button>
+    <ion-button fill="outline" size="small">Semanais</ion-button>
+    <ion-button fill="outline" size="small">Mensais</ion-button>
+  </div>
+
+  <!-- Cartões de métricas -->
+  <ion-card class="metric-card">
+    <ion-item lines="none">
+      <ion-label>Duração</ion-label>
+      <ion-note slot="end" color="success">+25 min</ion-note>
+    </ion-item>
+  </ion-card>
+
+  <ion-card class="metric-card">
+    <ion-item lines="none">
+      <ion-label>Calorias</ion-label>
+      <ion-note slot="end" color="success">+180 cal</ion-note>
+    </ion-item>
+  </ion-card>
+
+  <ion-card class="metric-card">
+    <ion-item lines="none">
+      <ion-label>Atividades</ion-label>
+      <ion-note slot="end" color="danger">-1</ion-note>
+    </ion-item>
+  </ion-card>
+
+  <!-- Resumo -->
+  <ion-card class="summary-card">
+    <ion-item lines="none">
+      <ion-label>Média semanal</ion-label>
+      <ion-note slot="end">Boa</ion-note>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-label>Melhor semana</ion-label>
+      <ion-note slot="end">Esta semana</ion-note>
+    </ion-item>
+  </ion-card>
+
+</ion-content>
+

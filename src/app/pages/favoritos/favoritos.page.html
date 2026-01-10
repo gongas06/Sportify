@@ -1,0 +1,76 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <ion-icon name="heart" color="primary"></ion-icon>
+      Favoritos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <!-- Pesquisa -->
+  <ion-searchbar placeholder="Pesquisar"></ion-searchbar>
+
+  <p class="subtitle">
+    Estas são as tuas atividades favoritas ⭐
+  </p>
+
+  <!-- Card 1 -->
+  <ion-card>
+    <ion-item lines="none">
+      <ion-icon name="walk" slot="start" color="primary"></ion-icon>
+      <ion-label>
+        <h2>Corrida</h2>
+        <p>22 de abril de 2025</p>
+      </ion-label>
+      <ion-icon name="star" slot="end" color="warning"></ion-icon>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-note slot="start">⏱ 45min</ion-note>
+      <ion-note slot="end" color="primary">🔥 Moderada</ion-note>
+    </ion-item>
+  </ion-card>
+
+  <!-- Card 2 -->
+  <ion-card>
+    <ion-item lines="none">
+      <ion-icon name="bicycle" slot="start" color="primary"></ion-icon>
+      <ion-label>
+        <h2>Ciclismo</h2>
+        <p>20 de abril de 2025</p>
+      </ion-label>
+      <ion-icon name="star" slot="end" color="warning"></ion-icon>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-note slot="start">⏱ 1h 15min</ion-note>
+      <ion-note slot="end" color="primary">🔥 Alta</ion-note>
+    </ion-item>
+  </ion-card>
+
+  <!-- Card 3 -->
+  <ion-card>
+    <ion-item lines="none">
+      <ion-icon name="barbell" slot="start" color="primary"></ion-icon>
+      <ion-label>
+        <h2>Ginásio</h2>
+        <p>18 de abril de 2025</p>
+      </ion-label>
+      <ion-icon name="star" slot="end" color="warning"></ion-icon>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-note slot="start">⏱ 1h 10min</ion-note>
+      <ion-note slot="end" color="primary">🔥 Moderada</ion-note>
+    </ion-item>
+  </ion-card>
+
+  <!-- Botões -->
+  <div class="actions">
+    <ion-button fill="outline" color="medium">Eliminar</ion-button>
+    <ion-button color="primary">Editar</ion-button>
+  </div>
+
+</ion-content>

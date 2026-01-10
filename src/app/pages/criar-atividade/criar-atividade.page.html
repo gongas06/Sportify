@@ -1,0 +1,74 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Criar Atividade</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <!-- Tipo de Desporto -->
+  <h2>Tipo de Desporto</h2>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="4" *ngFor="let tipo of tipos">
+        <ion-button
+          expand="block"
+          [fill]="tipoSelecionado === tipo.nome ? 'solid' : 'outline'"
+          (click)="selecionarTipo(tipo)">
+          <ion-icon [name]="tipo.icon" slot="start"></ion-icon>
+          {{ tipo.nome }}
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- Data -->
+  <h2>Data</h2>
+  <ion-item>
+    <ion-datetime-button datetime="data"></ion-datetime-button>
+  </ion-item>
+
+  <ion-modal keepContentsMounted="true">
+    <ion-datetime id="data" presentation="date"></ion-datetime>
+  </ion-modal>
+
+  <!-- Duração -->
+  <h2>Duração</h2>
+  <ion-item>
+    <ion-input
+      type="time"
+      [(ngModel)]="duracao">
+    </ion-input>
+  </ion-item>
+
+  <!-- Local -->
+  <h2>Local</h2>
+  <ion-item button>
+    <ion-icon name="location-outline" slot="start"></ion-icon>
+    <ion-label>Adicionar Localização</ion-label>
+  </ion-item>
+
+  <!-- Intensidade -->
+  <h2>Intensidade</h2>
+
+  <ion-segment [(ngModel)]="intensidade">
+    <ion-segment-button value="Baixa">Baixa</ion-segment-button>
+    <ion-segment-button value="Moderada">Moderada</ion-segment-button>
+    <ion-segment-button value="Alta">Alta</ion-segment-button>
+  </ion-segment>
+
+  <ion-range min="0" max="100" step="10"></ion-range>
+
+  <!-- Botões -->
+  <div class="botoes">
+    <ion-button color="medium" expand="block" (click)="cancelar()">
+      Cancelar
+    </ion-button>
+
+    <ion-button color="primary" expand="block" (click)="guardar()">
+      Guardar
+    </ion-button>
+  </div>
+
+</ion-content>

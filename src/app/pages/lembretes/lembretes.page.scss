@@ -1,0 +1,89 @@
+:root {
+  --roxo: #A855F7;
+  --roxo-claro: #F5EDFF;
+  --preto: #000000;
+  --cinza-texto: #6B7280;
+  --borda: #E5E7EB;
+  --verde-toggle: #4ADE80;
+}
+
+/* Página */
+ion-content {
+  --background: #ffffff;
+  padding: 16px;
+}
+
+/* Título */
+.page-title {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--preto);
+  margin-bottom: 6px;
+}
+
+/* Subtítulo */
+.page-subtitle {
+  font-size: 16px;
+  color: var(--cinza-texto);
+  margin-bottom: 24px;
+}
+
+/* Card */
+.lembrete-card {
+  background: var(--roxo-claro);
+  border-radius: 16px;
+  padding: 14px;
+  margin-bottom: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Info */
+.lembrete-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.lembrete-textos {
+  display: flex;
+  flex-direction: column;
+}
+
+.lembrete-titulo {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--preto);
+}
+
+.lembrete-descricao {
+  font-size: 14px;
+  color: var(--cinza-texto);
+}
+
+/* Ícone */
+.lembrete-icon {
+  font-size: 28px;
+  color: var(--roxo);
+}
+
+/* Toggle */
+ion-toggle {
+  --track-background-checked: var(--verde-toggle);
+  --handle-background-checked: #ffffff;
+}
+
+/* Botão */
+.add-lembrete-button {
+  margin-top: 24px;
+  height: 56px;
+  border-radius: 999px;
+
+  --background: var(--roxo);
+  --color: white;
+
+  font-size: 18px;
+  font-weight: 700;
+}

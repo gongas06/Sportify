@@ -1,3 +1,10 @@
+ion-header,
+ion-toolbar {
+  --background: #ffffff;
+  --color: #000000;
+  box-shadow: none;
+}
+
 .profile-content {
   --padding-top: 20px;
   --padding-start: 16px;
@@ -99,11 +106,20 @@
   color: #999;
 }
 
-.create-activity-btn {
-  margin-top: 30px;
-  --background: linear-gradient(135deg, #a855f7, #7c3aed);
-  --border-radius: 30px;
-  height: 52px;
-  font-size: 18px;
+.create-activity-button {
+  --background: #B15CFF;
+  --background-hover: #9f45f0;
+  --background-activated: #9f45f0;
+  --color: #ffffff;
+
+  --border-radius: 999px; 
+  --box-shadow: none;
+
+  height: 56px;
+  font-size: 20px;
   font-weight: 600;
+  letter-spacing: 0.3px;
+
+  margin: 16px;
 }
+
