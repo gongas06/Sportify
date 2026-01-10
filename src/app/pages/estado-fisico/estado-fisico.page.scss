@@ -1,0 +1,94 @@
+.card {
+  background: #faf5ff;
+  padding: 16px;
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+
+.activity {
+  display: flex;
+  gap: 12px;
+}
+
+.activity ion-icon {
+  font-size: 28px;
+  color: #c084fc;
+}
+
+.location {
+  color: gray;
+  font-size: 13px;
+}
+
+.question {
+  font-weight: 600;
+  margin: 12px 0;
+}
+
+.moods {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.mood {
+  width: 70px;
+  padding: 8px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.mood span {
+  display: block;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.good { background: #dcfce7; }
+.ok { background: #ecfeff; }
+.normal { background: #fef9c3; }
+.bad { background: #fee2e2; }
+
+.section {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.intensity-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.intensity-header ion-icon {
+  color: #c084fc;
+}
+
+.kcal {
+  margin-top: 10px;
+}
+
+.progress {
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 6px;
+}
+
+.bar {
+  width: 70%;
+  height: 100%;
+  background: #c084fc;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+ion-button {
+  --background: #c084fc;
+}

@@ -1,0 +1,75 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Objetivos & Metas</ion-title>
+    <ion-icon name="settings-outline" slot="end"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <p class="subtitle">Acompanha o teu progresso</p>
+
+  <!-- Objetivo semanal -->
+  <div class="card">
+    <h3>Objetivos Semanal</h3>
+
+    <div class="weekly">
+      <div>
+        <h2>150 <span>/ 200 min</span></h2>
+        <p>Minutos de treino esta semana</p>
+      </div>
+
+      <div class="circle">
+        <span>75%</span>
+        <small>150 / 200 min</small>
+      </div>
+    </div>
+  </div>
+
+  <!-- Metas definidas -->
+  <div class="card">
+    <h3>Metas Definidas</h3>
+
+    <div class="meta">
+      <span>📄 Meta de Atividades</span>
+      <p>5 / 6 atividades</p>
+      <div class="progress">
+        <div class="bar w80"></div>
+      </div>
+    </div>
+
+    <div class="meta">
+      <span>⏱ Meta de Tempo</span>
+      <p>150 / 200 minutos</p>
+      <div class="progress">
+        <div class="bar w75"></div>
+      </div>
+    </div>
+
+    <div class="meta">
+      <span>🔥 Meta de Intensidade</span>
+      <p>3 atividades intensas</p>
+      <div class="progress">
+        <div class="bar w60"></div>
+      </div>
+    </div>
+
+    <ion-button expand="block" class="edit-btn">
+      Editar Objetivos
+    </ion-button>
+  </div>
+
+  <!-- Histórico -->
+  <div class="card">
+    <h3>Histórico de Metas</h3>
+
+    <div class="history success">
+      ✅ Parabéns! concluíste o objetivo da semana passada!
+    </div>
+
+    <div class="history error">
+      ❌ Oops, não atingiste o objetivo mensal!
+    </div>
+  </div>
+
+</ion-content>

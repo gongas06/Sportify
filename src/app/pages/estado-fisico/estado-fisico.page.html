@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Estado Físico</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <!-- Card atividade -->
+  <div class="card">
+    <div class="activity">
+      <ion-icon name="walk-outline"></ion-icon>
+      <div>
+        <h3>Corrida</h3>
+        <p>21 Abril 2026 às 10:00 · 25 min</p>
+        <p class="location">
+          <ion-icon name="location-outline"></ion-icon>
+          Parque da cidade, Porto
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Emoções -->
+  <p class="question">Como te sentiste após esta atividade?</p>
+
+  <div class="moods">
+    <div class="mood good">😊<span>Ótimo</span></div>
+    <div class="mood ok">🙂<span>Bem</span></div>
+    <div class="mood normal">😐<span>Normal</span></div>
+    <div class="mood bad">😫<span>Cansado</span></div>
+  </div>
+
+  <!-- Notas -->
+  <p class="section">Notas</p>
+  <ion-textarea
+    placeholder="Adicionar notas sobre como te sentiste ou outros detalhes ..."
+  ></ion-textarea>
+
+  <!-- Intensidade -->
+  <div class="card intensity">
+    <div class="intensity-header">
+      <ion-icon name="flame-outline"></ion-icon>
+      <strong>Moderada</strong>
+    </div>
+
+    <div class="kcal">
+      <span>350 KCAL</span>
+      <div class="progress">
+        <div class="bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Botões -->
+  <div class="actions">
+    <ion-button fill="outline" color="medium">
+      Eliminar
+    </ion-button>
+
+    <ion-button>
+      Guardar
+    </ion-button>
+  </div>
+
+</ion-content>

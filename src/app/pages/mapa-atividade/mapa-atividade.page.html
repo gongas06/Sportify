@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Mapa da Atividade</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <!-- Card atividade -->
+  <div class="card">
+    <div class="activity">
+      <ion-icon name="walk-outline"></ion-icon>
+      <div>
+        <h3>Corrida</h3>
+        <p>21 Abril 2026 às 10:00 · 25 min</p>
+        <p class="location">
+          <ion-icon name="location-outline"></ion-icon>
+          Parque da cidade, Porto
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mapa (placeholder) -->
+  <div class="map">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/OpenStreetMap_Mapnik.svg/800px-OpenStreetMap_Mapnik.svg.png"
+      alt="Mapa"
+    />
+  </div>
+
+  <!-- Estatísticas -->
+  <div class="stats">
+    <div>
+      <small>Distância</small>
+      <strong>5.2 KM</strong>
+    </div>
+    <div>
+      <small>Duração</small>
+      <strong>35 MIN</strong>
+    </div>
+    <div>
+      <small>Calorias</small>
+      <strong>400 CAL</strong>
+    </div>
+  </div>
+
+  <!-- Notas -->
+  <p class="section">Notas</p>
+  <div class="notes">
+    Treino intenso, mas muito bom
+  </div>
+
+  <!-- Botão -->
+  <ion-button expand="block" class="fav-btn">
+    <ion-icon name="star" slot="start"></ion-icon>
+    Adicionar aos Favoritos
+  </ion-button>
+
+</ion-content>
