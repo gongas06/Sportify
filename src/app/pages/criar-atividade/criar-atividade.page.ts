@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-criar-atividade',
@@ -29,10 +30,6 @@ export class CriarAtividadePage {
     this.tipoSelecionado = tipo.nome;
   }
 
-  cancelar() {
-    console.log('Atividade cancelada');
-  }
-
   guardar() {
     console.log({
       tipo: this.tipoSelecionado,
@@ -40,5 +37,30 @@ export class CriarAtividadePage {
       intensidade: this.intensidade,
     });
   }
-}
 
+  constructor(private router: Router) {}
+  gotoProfile() {
+    this.router.navigate(['/profile']);
+  }
+
+  // 👉 ADICIONA AQUI
+  abrirMaps() {
+    if (!navigator.geolocation) {
+      console.error("Geolocalização não suportada");
+      return;
+    }
+
+    navigator.geolocation.getCurrentPosition(
+      (pos) => {
+        const lat = pos.coords.latitude;
+        const lng = pos.coords.longitude;
+
+        const url = `https://www.google.com/maps?q=${lat},${lng}`;
+        window.open(url, '_blank');
+      },
+      (err) => {
+        console.error("Erro ao obter localização:", err);
+      }
+    );
+  }
+}

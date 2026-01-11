@@ -3,4 +3,20 @@
   --ion-color-secondary: #ff9500;
 
   --ion-font-family: "Poppins", sans-serif;
+
+  /* Tema claro */
+  --ion-background-color: #ffffff;
+  --ion-text-color: #000000;
+  --ion-surface-color: #f2f2f7;
+  --ion-toolbar-background: #BC58FF;
+  --ion-toolbar-text: #ffffff;
+}
+
+body.dark {
+  /* Tema escuro */
+  --ion-background-color: #000000;
+  --ion-text-color: #ffffff;
+  --ion-surface-color: #1c1c1e;
+  --ion-toolbar-background: #000000;
+  --ion-toolbar-text: #ffffff;
 }

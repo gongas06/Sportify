@@ -44,10 +44,10 @@
 
   <!-- Local -->
   <h2>Local</h2>
-  <ion-item button>
-    <ion-icon name="location-outline" slot="start"></ion-icon>
-    <ion-label>Adicionar Localização</ion-label>
-  </ion-item>
+    <ion-item button (click)="abrirMaps()">
+      <ion-icon name="location-outline" slot="start"></ion-icon>
+      <ion-label>Adicionar Localização</ion-label>
+    </ion-item>
 
   <!-- Intensidade -->
   <h2>Intensidade</h2>
@@ -62,7 +62,7 @@
 
   <!-- Botões -->
   <div class="botoes">
-    <ion-button color="medium" expand="block" (click)="cancelar()">
+    <ion-button color="medium" expand="block" (click)="gotoProfile()">
       Cancelar
     </ion-button>
 

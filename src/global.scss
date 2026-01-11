@@ -25,38 +25,13 @@ ion-title{
     text-align: center;
 }
 
-ion-content {
-  --background: #ffffff;
-}
+ion-content { --background: var(--ion-background-color); color: var(--ion-text-color); }
 
-/* pinta todos os toolbars/headers do app */
-ion-toolbar,
-ion-header {
-  /* cor de fundo do header/toolbar */
-  --background: #BC58FF;
-  /* cor do texto / ícones dentro do toolbar */
-  --color: #000000;
-}
+/* Toolbar / Header */ ion-toolbar, ion-header { --background: var(--ion-toolbar-background); --color: var(--ion-toolbar-text); }
 
-/* força títulos e ícones a ficarem brancos caso alguma regra inline ou tema esteja a sobrescrever */
-ion-toolbar ion-title,
-ion-toolbar .toolbar-title,
-ion-toolbar .title {
-  color: #ffffff !important;
-}
+/* Títulos dentro da toolbar */ ion-toolbar ion-title, ion-toolbar .toolbar-title, ion-toolbar .title { color: var(--ion-toolbar-text) !important; }
 
-/* garante que botões (ion-buttons / ion-icon dentro do toolbar) também fiquem brancos */
-ion-toolbar ion-button,
-ion-toolbar ion-buttons,
-ion-toolbar ion-icon,
-ion-toolbar .toolbar-button {
-  color: #ffffff !important;
-}
+/* Ícones e botões dentro da toolbar */ ion-toolbar ion-button, ion-toolbar ion-buttons, ion-toolbar ion-icon, ion-toolbar .toolbar-button { color: var(--ion-toolbar-text) !important; }
 
-/* se estiver a usar ion-header com translucent, desative/transparencie para evitar o efeito padrão */
-ion-header[translucent],
-ion-toolbar[translucent] {
-  --background: #02043e;
-  --backdrop-opacity: 1;
-}
+/* Itens da lista */ ion-item { --background: var(--ion-surface-color); --color: var(--ion-text-color); }
 

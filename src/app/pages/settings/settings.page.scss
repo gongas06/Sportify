@@ -1,0 +1,14 @@
+// src/theme/variables.scss
+
+ion-content {
+  --ion-color-primary: #222428;
+  --ion-color-secondary: #3dc2ff;
+  --ion-color-background: #000000;
+  --ion-color-surface: #1c1c1e;
+  --ion-color-text: #ffffff;
+  --ion-toolbar-background: #000000;
+}
+ion-header {
+  --background: var(--ion-color-surface);
+  --color: var(--ion-color-text);
+}
