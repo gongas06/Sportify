@@ -96,4 +96,9 @@ export const routes: Routes = [
     path: 'lembretes',
     loadComponent: () => import('./pages/lembretes/lembretes.page').then( m => m.LembretesPage)
   },
+  {
+    path: 'personalizacao',
+    loadComponent: () =>
+      import('./pages/personalizacao/personalizacao.page').then(m => m.PersonalizacaoPage),
+  },
 ];

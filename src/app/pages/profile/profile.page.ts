@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Router } from '@angular/router';
 import {
   IonContent,
   IonHeader,
@@ -28,4 +28,10 @@ import {
     IonAvatar,
   ],
 })
-export class ProfilePage {}
+export class ProfilePage {
+   constructor(private router: Router) {}
+
+  gotoPersonalizacao() {
+    this.router.navigate(['/personalizacao']);
+  }
+}

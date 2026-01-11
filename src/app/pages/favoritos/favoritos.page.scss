@@ -9,3 +9,18 @@
   justify-content: space-between;
   margin-top: 20px;
 }
+
+.eliminar{
+  --border-radius: 20px;
+  width: 48%;
+}
+
+.editar {
+  --background: #BC58FF;
+  --color: #fff;
+  --border-radius: 20px;
+  width: 48%;
+}
+.editar:hover {
+  --background: #A63ED6;
+}
