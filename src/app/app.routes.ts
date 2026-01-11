@@ -96,6 +96,10 @@ export const routes: Routes = [
     path: 'lembretes',
     loadComponent: () => import('./pages/lembretes/lembretes.page').then( m => m.LembretesPage)
   },
+    {
+    path: 'menu',
+    loadComponent: () => import('./pages/menu/menu.page').then( m => m.MenuPage)
+  },
   {
     path: 'personalizacao',
     loadComponent: () =>

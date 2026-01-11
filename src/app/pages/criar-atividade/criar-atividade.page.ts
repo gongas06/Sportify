@@ -26,6 +26,8 @@ export class CriarAtividadePage {
   duracao = '00:30';
   intensidade = 'Moderada';
 
+dataSelecionada = new Date().toISOString();
+
   selecionarTipo(tipo: any) {
     this.tipoSelecionado = tipo.nome;
   }

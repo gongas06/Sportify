@@ -25,22 +25,32 @@
 
   <!-- Data -->
   <h2>Data</h2>
-  <ion-item>
-    <ion-datetime-button datetime="data"></ion-datetime-button>
-  </ion-item>
+ <ion-item button>
+  <ion-label>
+    {{ dataSelecionada | date:'dd \'de\' MMMM \'de\' yyyy' }}
+  </ion-label>
+  <ion-icon name="calendar-outline" slot="end"></ion-icon>
 
-  <ion-modal keepContentsMounted="true">
-    <ion-datetime id="data" presentation="date"></ion-datetime>
-  </ion-modal>
+  <ion-datetime
+    presentation="date"
+    [(ngModel)]="dataSelecionada"
+    show-default-buttons="true">
+  </ion-datetime>
+</ion-item>
+
 
   <!-- Duração -->
   <h2>Duração</h2>
-  <ion-item>
-    <ion-input
-      type="time"
-      [(ngModel)]="duracao">
-    </ion-input>
-  </ion-item>
+
+<ion-item lines="none" class="input-box">
+  <ion-icon name="time-outline" slot="start"></ion-icon>
+
+  <ion-input
+    type="time"
+    [(ngModel)]="duracao">
+  </ion-input>
+</ion-item>
+
 
   <!-- Local -->
   <h2>Local</h2>

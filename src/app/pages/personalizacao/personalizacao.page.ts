@@ -10,6 +10,7 @@ import {
   IonItem,
   IonLabel
 } from '@ionic/angular/standalone';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-personalizacao',
@@ -24,7 +25,8 @@ import {
     IonTitle,
     IonButton,
     IonItem,
-    IonLabel
+    IonLabel,
+    RouterModule
   ]
 })
 export class PersonalizacaoPage {
