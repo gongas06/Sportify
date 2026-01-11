@@ -2,24 +2,38 @@
 
   <div class="container">
 
-    <ion-img src="assets/logo_sportify.png" class="logo"></ion-img>
+    <!-- LOGO -->
+    <ion-img
+      src="assets/logo_sportify.png"
+      class="logo">
+    </ion-img>
 
     <h1 class="title">Entrar</h1>
 
+    <!-- EMAIL -->
     <ion-input
       label="Email"
       label-placement="floating"
       type="email"
       class="input-box"
-    ></ion-input>
+      [(ngModel)]="email">
+    </ion-input>
 
+    <!-- PASSWORD -->
     <ion-input
       label="Password"
       label-placement="floating"
       type="password"
       class="input-box"
-    ></ion-input>
+      [(ngModel)]="password">
+    </ion-input>
 
+    <!-- ERRO (opcional, mas recomendado) -->
+    <p *ngIf="error" class="error">
+      {{ error }}
+    </p>
+
+    <!-- RECUPERAR PASSWORD -->
     <ion-button
       fill="clear"
       class="forgot"
@@ -27,8 +41,12 @@
       Esqueci-me da password
     </ion-button>
 
-
-    <ion-button expand="block" shape="round" class="btn-login">
+    <!-- BOTÃO LOGIN -->
+    <ion-button
+      expand="block"
+      shape="round"
+      class="btn-login"
+      (click)="login()">
       Entrar
     </ion-button>
 

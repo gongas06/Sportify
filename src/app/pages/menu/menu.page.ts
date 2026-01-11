@@ -10,6 +10,7 @@ import {
   IonIcon,
   IonLabel,
 } from '@ionic/angular/standalone';
+import { RouterLink, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-menu',
@@ -26,6 +27,7 @@ import {
     IonItem,
     IonIcon,
     IonLabel,
+    RouterModule
   ],
 })
 export class MenuPage {}

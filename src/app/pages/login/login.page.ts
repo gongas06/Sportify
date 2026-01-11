@@ -24,9 +24,23 @@ import {
     IonImg
   ]
 })
-
 export class LoginPage {
+
+  email = '';
+  password = '';
+  error = '';
+
   constructor(private router: Router) {}
+
+  login() {
+    if (!this.email || !this.password) {
+      this.error = 'Preencha todos os campos';
+      return;
+    }
+
+
+    this.router.navigate(['/tabs/statistic']);
+  }
 
   gotoRecover() {
     this.router.navigate(['/recover']);
