@@ -1,55 +1,78 @@
-<ion-header translucent="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title></ion-title>
+    <ion-title>Perfil</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content fullscreen class="profile-content">
+<ion-content class="ion-padding">
 
-  <!-- Saudação -->
-  <div class="profile-greeting">
-    <h1>Olá, <span>João</span></h1>
-    <p>Aqui está o teu resumo semanal</p>
+  <!-- HEADER PERFIL -->
+  <div class="profile-header">
+    <ion-avatar>
+      <img src="assets/img/profile.jpg" alt="Foto Perfil" />
+    </ion-avatar>
+
+    <div class="profile-info">
+      <h2>João Silva</h2>
+      <p>Ativo desde Março 2024</p>
+
+      <ion-button
+  fill="clear"
+  size="small"
+  routerLink="/personalizacao">
+   Editar Personalização
+</ion-button>
+
+    </div>
   </div>
 
-  <!-- Estatísticas principais -->
- <div class="profile-stats">
-  <div class="stat-card">
-    <img src="assets/fire.png" class="stat-icon" />
-    <h2>1.200</h2>
-    <p>Total de calorias</p>
+  <!-- DADOS UTILIZADOR -->
+  <div class="card">
+    <h3>Dados do Utilizador</h3>
+
+    <div class="user-data">
+      <div class="data-item">
+        <ion-icon name="calendar-outline"></ion-icon>
+        <span>22 anos</span>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="data-item">
+        <ion-icon name="barbell-outline"></ion-icon>
+        <span>72 Kg</span>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="data-item">
+        <ion-icon name="resize-outline"></ion-icon>
+        <span>1,75 m</span>
+      </div>
+    </div>
   </div>
 
-  <div class="stat-card">
-    <img src="assets/watch.png" class="stat-icon" />
-    <h2>12h 45m</h2>
-    <p>Tempo Total</p>
+  <!-- ESTATÍSTICAS -->
+  <div class="card">
+    <h3>Estatísticas Rápidas</h3>
+
+    <div class="stats">
+      <div class="stat-box">
+        <span class="value">150</span>
+        <span class="label">Treinos</span>
+      </div>
+
+      <div class="stat-box">
+        <span class="value">320 Km</span>
+        <span class="label">Distância</span>
+      </div>
+
+      <div class="stat-box">
+        <span class="value">24.000 Kcal</span>
+        <span class="label">Calorias</span>
+      </div>
+    </div>
   </div>
-</div>
-
-
-  <!-- Atividade mais frequente -->
-  <div class="profile-activity">
-  <img src="assets/running.png" class="activity-icon" />
-  <div class="corrida">
-    <h2>Corrida</h2>
-    <p>Atividade mais frequente</p>
-  </div>
-</div>
-
-
-  <!-- Gráfico semanal -->
-  <div class="profile-chart">
-    <p class="chart-title">Atividades da semana</p>
-    <div class="chart-container">
-  <canvas id="weeklyChart"></canvas>
-</div>
-
-  </div>
-
-  <!-- Botão principal -->
-  <ion-button expand="block" class="create-activity-button" [routerLink]="['/criar-atividade']">
-    Criar Atividade
-  </ion-button>
 
 </ion-content>
+

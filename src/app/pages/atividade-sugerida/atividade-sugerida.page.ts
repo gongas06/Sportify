@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
 import {
   IonContent,
   IonHeader,
@@ -8,24 +7,21 @@ import {
   IonToolbar,
   IonIcon,
   IonButton,
-  IonAvatar,
 } from '@ionic/angular/standalone';
 
 @Component({
-  selector: 'app-profile',
-  templateUrl: './profile.page.html',
-  styleUrls: ['./profile.page.scss'],
+  selector: 'app-atividade-sugerida',
+  templateUrl: './atividade-sugerida.page.html',
+  styleUrls: ['./atividade-sugerida.page.scss'],
   standalone: true,
   imports: [
     CommonModule,
-    RouterModule,
     IonContent,
     IonHeader,
     IonTitle,
     IonToolbar,
     IonIcon,
     IonButton,
-    IonAvatar,
   ],
 })
-export class ProfilePage {}
+export class AtividadeSugeridaPage {}

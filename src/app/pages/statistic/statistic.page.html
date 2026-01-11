@@ -1,36 +1,58 @@
-
-<ion-header class="ion-no-border">
+<ion-header translucent="true">
   <ion-toolbar>
-    <ion-title></ion-title>
+    <ion-title>Estatísticas</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="page">
+<ion-content fullscreen class="profile-content">
 
-  <h1 class="hello">Olá,</h1>
-  <h1 class="name">João!</h1>
-  <p class="subtitle">Aqui está o teu resumo semanal</p>
+  <!-- Saudação -->
+  <div class="profile-greeting">
+    <h1>Olá, <span>João</span></h1>
+    <p>Aqui está o teu resumo semanal</p>
+  </div>
 
-  <div class="stats">
-    <div class="card">
-      <ion-icon name="flame" class="icon"></ion-icon>
-      <div>
-        <h2>1.200</h2>
-        <p>Total de calorias</p>
-      </div>
+  <!-- Estatísticas principais -->
+  <div class="profile-stats">
+    <div class="stat-card">
+      <img src="assets/fire.png" class="stat-icon" />
+      <h2>—</h2>
+      <p>Total de calorias</p>
     </div>
 
-    <div class="card">
-      <ion-icon name="time" class="icon outline"></ion-icon>
-      <div>
-        <h2>3h 20m</h2>
-        <p>Tempo total</p>
-      </div>
+    <div class="stat-card">
+      <img src="assets/watch.png" class="stat-icon" />
+      <h2>{{ totalHoras | number:'1.1-1' }}h</h2>
+      <p>Tempo Total</p>
     </div>
   </div>
 
-  <div class="box small"></div>
-  <div class="box large"></div>
+  <!-- Atividade mais frequente -->
+  <div class="profile-activity">
+    <img src="assets/running.png" class="activity-icon" />
+    <div class="corrida">
+      <h2>{{ atividadeMaisFrequente }}</h2>
+      <p>Atividade mais frequente</p>
+    </div>
+  </div>
+
+  <!-- Gráfico semanal -->
+  <div class="profile-chart">
+    <p class="chart-title">Atividades da semana</p>
+
+    <div class="chart-container">
+      <canvas id="weeklyChart"></canvas>
+    </div>
+  </div>
+
+  <!-- Botão principal -->
+  <ion-button
+    expand="block"
+    class="create-activity-button"
+    [routerLink]="['/criar-atividade']"
+  >
+    Criar Atividade
+  </ion-button>
 
 </ion-content>
 

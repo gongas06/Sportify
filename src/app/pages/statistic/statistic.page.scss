@@ -1,75 +1,125 @@
-
-.page {
-  padding: 24px;
+ion-header,
+ion-toolbar {
+  --background: #ffffff;
+  --color: #000000;
+  box-shadow: none;
 }
 
-.hello {
+.profile-content {
+  --padding-top: 20px;
+  --padding-start: 16px;
+  --padding-end: 16px;
+}
+
+.profile-greeting h1 {
   font-size: 28px;
-  margin-bottom: 0;
-  color: #000000;
-}
-
-.name {
-  font-size: 32px;
   font-weight: 700;
-  color: #9b5cff;
-  margin-top: 0;
 }
 
-.subtitle {
+.profile-greeting span {
+  color: #a855f7;
+}
+
+.profile-greeting p {
   color: #666;
-  margin-bottom: 24px;
+  margin-top: 4px;
 }
 
-.stats {
+.profile-stats {
   display: flex;
   gap: 12px;
-  margin-bottom: 24px;
-  color: #000000;
+  margin-top: 20px;
 }
 
-.card {
+.stat-card {
   flex: 1;
-  border: 1px solid #ddd;
-  border-radius: 12px;
+  background: #fff;
+  border-radius: 16px;
   padding: 16px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.stat-card ion-icon {
+  font-size: 28px;
+  color: #a855f7;
+}
+
+.stat-card h2 {
+  margin: 8px 0 4px;
+  font-weight: 700;
+}
+
+.corrida h2 {
+  margin: 8px 0 4px;
+  font-weight: 700;
+}
+
+.stat-card p {
+  font-size: 13px;
+  color: #666;
+}
+
+.stat-card,
+.profile-activity,
+.profile-chart {
+  background: #fff !important;
+  border: 2px solid #000 !important;
+}
+
+.profile-activity {
   display: flex;
   align-items: center;
   gap: 12px;
-}
-
-.icon {
-  font-size: 28px;
-  color: #9b5cff;
-}
-
-.icon.outline {
-  color: #9b5cff;
-}
-
-.card h2 {
-  margin: 0;
-  font-size: 22px;
-}
-
-.card p {
-  margin: 0;
-  font-size: 14px;
-  color: #666;
-}
-
-.box {
-  border: 1px solid #ddd;
+  background: #fff;
   border-radius: 16px;
-  margin-bottom: 16px;
+  padding: 16px;
+  margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
-.box.small {
-  height: 80px;
+.profile-activity ion-icon {
+  font-size: 32px;
+  color: #a855f7;
 }
 
-.box.large {
-  height: 220px;
+.profile-chart {
+  background: #fff;
+  border-radius: 16px;
+  padding: 16px;
+  margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
+.chart-title {
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.chart-placeholder {
+  height: 180px;
+  border-radius: 12px;
+  background: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+}
+
+.create-activity-button {
+  --background: #B15CFF;
+  --background-hover: #9f45f0;
+  --background-activated: #9f45f0;
+  --color: #ffffff;
+
+  --border-radius: 999px; 
+  --box-shadow: none;
+
+  height: 56px;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+
+  margin: 16px;
+}
 

@@ -1,0 +1,76 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Personalização</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <p class="subtitle">Ajusta a app ao teu gosto</p>
+
+  <!-- Tema -->
+  <div class="card">
+    <h3>Tema da Aplicação</h3>
+
+    <div class="options">
+      <button
+        [class.active]="tema === 'claro'"
+        (click)="selecionarTema('claro')">
+        ☀️ Claro
+      </button>
+
+      <button
+        [class.active]="tema === 'escuro'"
+        (click)="selecionarTema('escuro')">
+        🌙 Escuro
+      </button>
+    </div>
+  </div>
+
+  <!-- Idioma -->
+  <div class="card">
+    <h3>Idioma</h3>
+    <div class="row">
+      🇵🇹 Português
+    </div>
+  </div>
+
+  <!-- Unidades -->
+  <div class="card">
+    <h3>Unidades</h3>
+
+    <p class="section-label">Unidades de tempo</p>
+    <div class="options">
+      <button
+        [class.active]="tempo === 'minutos'"
+        (click)="selecionarTempo('minutos')">
+        Minutos
+      </button>
+
+      <button
+        [class.active]="tempo === 'horas'"
+        (click)="selecionarTempo('horas')">
+        Horas e minutos
+      </button>
+    </div>
+
+    <div class="options">
+      <button
+        [class.active]="distancia === 'milhas'"
+        (click)="selecionarDistancia('milhas')">
+        Milhas
+      </button>
+
+      <button
+        [class.active]="distancia === 'km'"
+        (click)="selecionarDistancia('km')">
+        Quilómetros
+      </button>
+    </div>
+  </div>
+
+  <ion-button expand="block" class="save-btn" (click)="guardar()">
+    Guardar preferências
+  </ion-button>
+
+</ion-content>
